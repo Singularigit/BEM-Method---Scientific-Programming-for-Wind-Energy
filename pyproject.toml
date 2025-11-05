@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wind-turbine"
+version = "0.1.0"
+description = "Wind turbine modeling classes for power output prediction"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "pandas",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "pylint>=2.15.0", 
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["piwe_bem_mouxtin_ae*", "piwe_bem_mouxtin_ae.*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
