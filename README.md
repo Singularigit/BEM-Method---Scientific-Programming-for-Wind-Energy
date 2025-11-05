@@ -37,10 +37,10 @@ To set up and run the simulation, follow these steps:
 
 ### **1️. Clone the Repository somewhere**
 ```sh
-git clone https://github.com/DTUWindEducation/final-project-mouxtin-ae.git
+git clone https://github.com/Singularigit/BEM-Method---Scientific-Programming-for-Wind-Energy.git
 ```
 ```sh
-cd final-project-mouxtin-ae
+cd BEM-Method---Scientific-Programming-for-Wind-Energy
 ```
 Ensure you have Python 3.11+:
 ```sh
